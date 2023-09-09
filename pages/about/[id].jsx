@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 function Developer() {
   const router = useRouter();
   const urlId = router.query.id;
+  console.log(typeof urlId);
   const details = [
     { id: 1, name: "Yash", role: "Senior Developer" },
     { id: 2, name: "Vaibhav", role: "Backend Developer" },
